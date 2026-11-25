@@ -12,6 +12,8 @@
 
 首版发布包正在准备中。发布后，可在本仓库的 **Releases** 下载 Windows x64 版本。
 
+AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下载和使用。后续版本及新增功能的定价，以对应的发布说明为准。
+
 | 版本 | 适用场景 |
 | --- | --- |
 | Windows 安装版（EXE） | 打开 AQR 主界面，手动选择手机应用和二维码画面。 |
@@ -33,6 +35,8 @@ Use Android apps on your PC. When you sign in to a desktop app or website, AQR s
 ### Downloads
 
 The initial release packages are in preparation. Windows x64 downloads will appear under **Releases**.
+
+The current version of AQR is free to download and use, including the Windows installer (EXE) and the local MCP edition. Pricing for future versions and new features will be stated in the corresponding release notes.
 
 | Edition | When to use it |
 | --- | --- |
