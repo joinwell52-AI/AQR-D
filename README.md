@@ -10,14 +10,16 @@
 
 ### 下载
 
-首版发布包正在准备中。发布后，可在本仓库的 **Releases** 下载 Windows x64 版本。
+Windows x64 首个预览版为 0.2.0。所有下载文件和 SHA-256 校验值见 [发布页](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.0)。
 
 AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下载和使用。后续版本及新增功能的定价，以对应的发布说明为准。
 
-| 版本 | 适用场景 |
+| 版本 | 下载和使用 |
 | --- | --- |
-| Windows 安装版（EXE） | 打开 AQR 主界面，手动选择手机应用和二维码画面。 |
-| 本机 MCP 版 | 在 Codex 等支持本机 MCP 的客户端里，用聊天打开手机应用、执行已配置的登录流程和查看进度。 |
+| Windows 安装版（EXE） | [下载安装包](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/AQR-Setup-x64.exe)。安装包内置 Node.js，运行后从开始菜单打开 **Auto QR Assistant**。 |
+| 本机 MCP 版 | [下载 MCP 包](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/aqr-mcp-0.2.0.tgz)。需要 Node.js 24 和 npm。运行 `npm install -g ./aqr-mcp-0.2.0.tgz`，再把 `aqr-mcp` 作为本机 stdio 服务接入客户端。 |
+
+MCP 在后台核对 npm 和官方发布页上的同版包，通过自检后在下次启动时启用更新。使用 `--no-update` 可保留原安装版本。
 
 ### 使用
 
@@ -34,14 +36,16 @@ Use Android apps on your PC. When you sign in to a desktop app or website, AQR s
 
 ### Downloads
 
-The initial release packages are in preparation. Windows x64 downloads will appear under **Releases**.
+The first Windows x64 preview is 0.2.0. See the [release page](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.0) for all downloads and SHA-256 checksums.
 
 The current version of AQR is free to download and use, including the Windows installer (EXE) and the local MCP edition. Pricing for future versions and new features will be stated in the corresponding release notes.
 
-| Edition | When to use it |
+| Edition | Download and use |
 | --- | --- |
-| Windows installer (EXE) | Use the AQR desktop interface to choose an Android app and a QR image. |
-| Local MCP | Use a local MCP client such as Codex to open Android apps, run configured sign-in workflows, and check their progress from chat. |
+| Windows installer (EXE) | [Download the Windows installer](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/AQR-Setup-x64.exe). It includes Node.js. After installation, open **Auto QR Assistant** from the Start menu. |
+| Local MCP | [Download the MCP package](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/aqr-mcp-0.2.0.tgz). With Node.js 24 and npm, run `npm install -g ./aqr-mcp-0.2.0.tgz`, then register `aqr-mcp` as a local stdio server. |
+
+MCP checks npm for updates in the background and cross-checks the archive against the official release. A verified update takes effect at the next start. Use `--no-update` to keep the installed version.
 
 ### Getting started
 
