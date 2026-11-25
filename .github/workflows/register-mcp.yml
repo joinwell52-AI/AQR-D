@@ -1,0 +1,32 @@
+name: Register AQR with the MCP Registry
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify and publish the registry metadata
+        shell: bash
+        env:
+          PUBLISHER_VERSION: v1.8.16
+          PUBLISHER_SHA256: 6e2f799550cf843c6fd3350498d56cc49be3dc0af1e6237eb0e6435c7a9d5c05
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          curl --fail --silent --show-error --location --retry 3 \
+            "https://github.com/modelcontextprotocol/registry/releases/download/$PUBLISHER_VERSION/mcp-publisher_linux_amd64.tar.gz" \
+            --output mcp-publisher.tar.gz
+          printf '%s  mcp-publisher.tar.gz\n' "$PUBLISHER_SHA256" | sha256sum --check -
+          tar -xzf mcp-publisher.tar.gz mcp-publisher
+          curl --fail --silent --show-error --location --retry 3 \
+            "https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_SHA/server.json" --output server.json
+          ./mcp-publisher validate server.json
+          ./mcp-publisher login github-oidc --registry=https://registry.modelcontextprotocol.io
+          ./mcp-publisher publish server.json
