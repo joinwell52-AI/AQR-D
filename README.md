@@ -47,6 +47,8 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 ### 本机 MCP
 
+官方 MCP Registry 已登记 `io.github.joinwell52-AI/aqr`。该条目指向 npm 上的本机 stdio 服务。 [查看官方登记](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/0.2.1)
+
 需要 Windows x64 和带 npm 的 Node.js 24 或更高版本。在 PowerShell 中安装并核对版本：
 
 ```powershell
@@ -109,6 +111,8 @@ Enable Developer options and USB debugging on your Android phone. Connect it wit
 3. **Scan.** Click **Open app**, open the scanner inside the Android app, and complete the sign-in. Select **Close PC Mode** after use.
 
 ### Local MCP setup
+
+The official MCP Registry lists `io.github.joinwell52-AI/aqr` and links it to the local stdio service on npm. [Registry entry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/0.2.1)
 
 MCP requires Windows x64 and Node.js 24 or later with npm. Install it from npm:
 
