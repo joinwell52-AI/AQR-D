@@ -14,10 +14,10 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 | 版本 | 下载 | 怎么用 |
 | --- | --- | --- |
-| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/AQR-Setup-x64.exe) | 安装后从开始菜单打开 **Auto QR Assistant**。安装包已包含 Node.js。 |
-| 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/aqr-mcp-0.2.0.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
+| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.1/AQR-Setup-x64.exe) | 安装后从开始菜单打开 **Auto QR Assistant**。安装包已包含 Node.js。 |
+| 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.1/aqr-mcp-0.2.1.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
 
-当前为 **Windows x64 0.2.0 预览版**。EXE 未做 Windows 代码签名，下载文件可在 [发布页](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.0) 核对 SHA-256。
+当前为 **Windows x64 0.2.1 预览版**。EXE 未做 Windows 代码签名，下载文件可在 [发布页](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.1) 核对 SHA-256。
 
 ### Windows 桌面版怎么操作
 
@@ -26,6 +26,8 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 #### 1. 主界面
 
 ![AQR 桌面主界面，使用演示设备和应用列表](assets/desktop-home-zh.png)
+
+图中使用 0.2.0 的演示数据。0.2.1 的桌面操作一致。
 
 - **右上角「刷新设备」** 重新查找当前 USB 手机。换手机后也用这个按钮。界面语言可切换中文和 English。
 - **左侧「手机应用」** 可按名称或包名搜索。点击应用旁的「打开」，用电脑鼠标和键盘操作，例如打开计算器或交管 12123。已打开的窗口在右侧列出，可从那里关闭。
@@ -52,7 +54,7 @@ npm install --global aqr-mcp
 aqr-mcp --version
 ```
 
-也可以下载 GitHub 上的 `.tgz`，在下载目录运行 `npm install --global ./aqr-mcp-0.2.0.tgz`。
+也可以下载 GitHub 上的 `.tgz`，在下载目录运行 `npm install --global ./aqr-mcp-0.2.1.tgz`。
 
 将以下配置加入支持本机 stdio 的 MCP 客户端。以 Codex 的 TOML 配置为例，先运行 `npm root --global`，再把输出目录填进 `args` 中的路径。
 
@@ -93,10 +95,10 @@ The current version of AQR is free to download and use, including the Windows in
 
 | Edition | Download | How to use it |
 | --- | --- | --- |
-| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/AQR-Setup-x64.exe) | Install and open **Auto QR Assistant** from the Start menu. Node.js is included. |
-| Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.0/aqr-mcp-0.2.0.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
+| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.1/AQR-Setup-x64.exe) | Install and open **Auto QR Assistant** from the Start menu. Node.js is included. |
+| Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.1/aqr-mcp-0.2.1.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
 
-The current **Windows x64 preview is 0.2.0**. The installer is unsigned. SHA-256 checksums are on the [release page](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.0).
+The current **Windows x64 preview is 0.2.1**. The installer is unsigned. SHA-256 checksums are on the [release page](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.1).
 
 ### Using the Windows desktop app
 
@@ -115,7 +117,7 @@ npm install --global aqr-mcp
 aqr-mcp --version
 ```
 
-For the GitHub download, run `npm install --global ./aqr-mcp-0.2.0.tgz` in the download folder. For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
+For the GitHub download, run `npm install --global ./aqr-mcp-0.2.1.tgz` in the download folder. For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
 
 #### MCP tools
 
