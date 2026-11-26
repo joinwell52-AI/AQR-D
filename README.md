@@ -4,7 +4,7 @@
 
 在电脑上操作手机 App，登录电脑客户端或网页时，由手机 App 自动扫码。
 
-[中文](#中文) · [English](#english) · [演示视频 / Demo video (MP4)](assets/aqr-demo.mp4)
+[中文](#中文) · [English](#english) · [观看演示视频 / Watch the demo](https://joinwell52-ai.github.io/AQR-D/)
 
 ## 中文
 
