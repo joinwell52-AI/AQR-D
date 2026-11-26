@@ -4,7 +4,7 @@
 
 在电脑上操作手机 App，登录电脑客户端或网页时，由手机 App 自动扫码。
 
-[中文](#中文) · [English](#english)
+[中文](#中文) · [English](#english) · [演示视频 / Demo video (MP4)](assets/aqr-demo.mp4)
 
 ## 中文
 
@@ -14,14 +14,16 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 | 版本 | 下载 | 怎么用 |
 | --- | --- | --- |
-| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.2/AQR-Setup-x64.exe) | 安装后从开始菜单打开 **Auto QR Assistant**。安装包已包含 Node.js。 |
-| 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.2/aqr-mcp-0.2.2.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
+| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/AQR-Setup-x64.exe) | 安装后从开始菜单打开 **Auto QR Assistant**。安装包已包含 Node.js。 |
+| 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
 
-当前为 **Windows x64 0.2.2 预览版**。EXE 未做 Windows 代码签名，下载文件可在 [发布页](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.2) 核对 SHA-256。
+当前为 **Windows x64 0.2.5 预览版**。EXE 未做 Windows 代码签名，下载文件可在 [发布页](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5) 核对 SHA-256。
 
 ### Windows 桌面版怎么操作
 
-首次连接手机时，在安卓手机的「开发者选项」中打开「USB 调试」，用能传数据的 USB 线连接，并在手机上允许这台电脑调试。首次使用默认配置时，AQR 会下载并校验 USB 工具。
+暂不支持 iPhone（iOS）和 iPad（iPadOS）。
+
+首次连接手机时，用 USB 数据线连接电脑，在手机的 USB 用途中选择「文件传输」。在「关于手机」中连续点击版本号开启开发者模式，再进入「开发者选项」打开「USB 调试」。手机弹出授权时点「允许」，再回到 AQR 点「刷新设备」。首次使用默认配置时，AQR 会下载并校验 USB 工具。
 
 #### 1. 主界面
 
@@ -56,7 +58,7 @@ npm install --global aqr-mcp
 aqr-mcp --version
 ```
 
-也可以下载 GitHub 上的 `.tgz`，在下载目录运行 `npm install --global ./aqr-mcp-0.2.2.tgz`。
+也可以下载 GitHub 上的 `.tgz`，在下载目录运行 `npm install --global ./aqr-mcp-0.2.5.tgz`。
 
 将以下配置加入支持本机 stdio 的 MCP 客户端。以 Codex 的 TOML 配置为例，先运行 `npm root --global`，再把输出目录填进 `args` 中的路径。
 
@@ -82,9 +84,14 @@ MCP 在后台检查 npm，并核对官方 GitHub 发布包的摘要。通过自�
 
 ### 兼容性和常见问题
 
-- **找不到手机。** 确认数据线支持传输，手机已允许当前电脑 USB 调试，然后刷新设备。连接了多台手机时，先保留要操作的一台。
+| 功能 | 安卓 | 原生鸿蒙 |
+| --- | --- | --- |
+| 投屏与操作 | 需要 ADB 和已授权的 USB 调试。支持打开 App、主屏投屏、鼠标和键盘操作，兼容的 App 可独立开窗。已在 Android 10 实测主屏投屏。 | 电脑需安装 HDC，手机需授权 USB 调试。桌面版支持打开 App、主屏预览、点击和滑动。 |
+| 电脑相机（扫码） | 需要 Android 16 或更高版本、可用的系统虚拟相机和已有的系统应用串流关联。 | 暂不支持。 |
+
+- **找不到手机。** 在手机上确认 USB 用途是「文件传输」，USB 调试已开启并允许当前电脑，然后刷新设备。连接了多台手机时，先保留要操作的一台。
+- **HarmonyOS 4.2.0。** 提供 ADB 的机型可使用安卓连接方式。已在一台华为真机上验证 USB 连接、应用列表和图标。
 - **需要装手机 APK 吗？** 普通 App 窗口和电脑模式无需在手机安装 AQR APK。
-- **可以打开应用，但手机收不到电脑画面。** 电脑模式需要 Android 16 或更高版本，以及手机上已有的系统应用串流关联。
 - **扫码后怎样确认？** 以电脑端的结果为准。微信示例以 Windows 微信出现会话列表为验收标志。
 
 ## English
@@ -97,14 +104,16 @@ The current version of AQR is free to download and use, including the Windows in
 
 | Edition | Download | How to use it |
 | --- | --- | --- |
-| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.2/AQR-Setup-x64.exe) | Install and open **Auto QR Assistant** from the Start menu. Node.js is included. |
-| Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-Distribution/releases/download/v0.2.2/aqr-mcp-0.2.2.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
+| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/AQR-Setup-x64.exe) | Install and open **Auto QR Assistant** from the Start menu. Node.js is included. |
+| Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
 
-The current **Windows x64 preview is 0.2.2**. The installer is unsigned. SHA-256 checksums are on the [release page](https://github.com/joinwell52-AI/AQR-Distribution/releases/tag/v0.2.2).
+The current **Windows x64 preview is 0.2.5**. The installer is unsigned. SHA-256 checksums are on the [release page](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5).
 
 ### Using the Windows desktop app
 
-Enable Developer options and USB debugging on your Android phone. Connect it with a USB data cable and authorize the computer when prompted. On first use with the default configuration, AQR downloads and verifies its USB tools.
+iPhone (iOS) and iPad (iPadOS) are not supported.
+
+Connect the phone with a USB data cable and select **File transfer** in the phone’s USB options. In **About phone**, tap **Build number** repeatedly to enable developer mode. Then turn on **USB debugging** in **Developer options**, tap **Allow** if prompted, and select **Refresh device** in AQR. On first use with the default configuration, AQR downloads and verifies its USB tools.
 
 1. **Main window.** Select **Refresh device** to detect the current USB phone. Search for WeChat and click **Open** to use it in a separate window. The right panel lists open windows and contains the connection guide.
 2. **PC Mode.** Display the sign-in QR code in WeChat for Windows. Choose **Switch account** if only the previous account’s sign-in button is visible. In AQR, open **Computer mode**, select WeChat as the phone app, capture the Windows WeChat window, and crop to the QR code with its white margin. You can also capture with `Win+Shift+S` and paste with `Ctrl+V`, or select a local image. These options work without OBS.
@@ -121,7 +130,7 @@ npm install --global aqr-mcp
 aqr-mcp --version
 ```
 
-For the GitHub download, run `npm install --global ./aqr-mcp-0.2.2.tgz` in the download folder. For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
+For the GitHub download, run `npm install --global ./aqr-mcp-0.2.5.tgz` in the download folder. For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
 
 #### MCP tools
 
@@ -139,7 +148,12 @@ MCP checks npm for updates in the background and cross-checks the archive agains
 
 ### Compatibility and troubleshooting
 
-- If AQR cannot find your phone, check the USB data cable and debugging authorization, then refresh devices. Connect one phone at a time.
+| Feature | Android | Native HarmonyOS |
+| --- | --- | --- |
+| Mirroring and control | Uses ADB and authorized USB debugging. Open apps, mirror the main screen with mouse and keyboard control, or open compatible apps in separate windows. Main-screen mirroring was tested on Android 10. | Install HDC on the PC and authorize USB debugging. The desktop app can launch apps and preview the main screen with click and swipe control. |
+| Computer camera for QR scanning | Requires Android 16 or later, a working system virtual camera, and an existing system app streaming association. | Currently unavailable. |
+
+- If AQR cannot find your phone, select **File transfer**, verify that USB debugging is on and that the PC is authorized, then refresh devices. Connect one phone at a time.
+- HarmonyOS devices with ADB can use the Android connection. USB connection, app listing, and icons were verified on a Huawei phone running HarmonyOS 4.2.0.
 - Standard app windows and PC Mode work without installing the AQR APK on the phone.
-- PC Mode requires Android 16 or later and an existing system app streaming association.
 - Verify the result on the PC. For WeChat, look for the chat list in the Windows client.
