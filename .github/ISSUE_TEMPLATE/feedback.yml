@@ -1,0 +1,33 @@
+name: 使用反馈 / Feedback
+description: 报告问题或提出建议 / Report a problem or suggest an improvement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这是公开反馈。若附截图，请先遮盖账号、二维码和其他个人信息。
+        This feedback is public. Mask account details, QR codes, and other personal information in screenshots.
+  - type: dropdown
+    id: area
+    attributes:
+      label: 使用环节 / Area
+      options:
+        - 安装或启动 / Install or launch
+        - USB 连接 / USB connection
+        - 打开 App 或投屏 / Open or mirror an app
+        - 电脑扫码 / QR sign-in
+        - MCP
+        - 功能建议或其他 / Suggestion or other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: AQR 版本、手机型号和系统版本 / AQR version, phone model, and OS version
+      placeholder: AQR 0.2.5 · Xiaomi 14 Pro · Android 16
+  - type: textarea
+    id: details
+    attributes:
+      label: 发生了什么，或希望怎样改进？ / What happened, or what would you like to change?
+      placeholder: 写下做到哪一步、预期结果和实际结果。 / Describe the step, what you expected, and what happened.
+    validations:
+      required: true
