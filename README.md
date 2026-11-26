@@ -1,10 +1,10 @@
-<img src="assets/aqr-icon.png" width="96" height="96" alt="AQR">
-
 # 自动扫码助手 · Auto QR Assistant（AQR）
 
 在电脑上操作手机 App，登录电脑客户端或网页时，由手机 App 自动扫码。
 
 [中文](#中文) · [English](#english) · [中文配音演示](https://joinwell52-ai.github.io/AQR-D/) · [English demo](https://joinwell52-ai.github.io/AQR-D/en/) · [使用反馈 / Feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
+
+![AQR 产品示意图 / Android apps on Windows over USB, no emulator](assets/aqr-windows-usb-banner.png)
 
 ## 中文
 
