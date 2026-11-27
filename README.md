@@ -6,6 +6,9 @@
 [![npm 版本](https://img.shields.io/npm/v/aqr-mcp?label=npm&logo=npm&logoColor=white&labelColor=18353a&color=086d69)](https://www.npmjs.com/package/aqr-mcp)
 [![官方 MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-086d69?labelColor=18353a)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/latest)
 
+[![npm 最近 30 天下载量](https://img.shields.io/npm/dm/aqr-mcp?label=npm%20downloads&labelColor=18353a&color=086d69)](https://www.npmjs.com/package/aqr-mcp)
+[![当前 Windows EXE 下载量](https://img.shields.io/github/downloads/joinwell52-AI/AQR-D/v0.2.5-setup.1/AQR-Setup-x64.exe?label=Windows%20EXE%20downloads&labelColor=18353a&color=086d69)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.1)
+
 [中文](#中文) · [English](#english) · [中文配音演示](https://joinwell52-ai.github.io/AQR-D/) · [English demo](https://joinwell52-ai.github.io/AQR-D/en/) · [使用反馈 / Feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
 
 ![AQR 产品示意图 / Android apps on Windows over USB, no emulator](assets/aqr-windows-usb-banner.png)
