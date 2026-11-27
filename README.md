@@ -59,10 +59,10 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 官方 MCP Registry 已登记 `io.github.joinwell52-AI/aqr`。该条目指向 npm 上的本机 stdio 服务。 [查看官方登记](https://registry.modelcontextprotocol.io/?q=io.github.joinwell52-AI%2Faqr)
 
-需要 Windows x64 和带 npm 的 Node.js 24 或更高版本。在 PowerShell 中安装 GitHub 上的 0.2.6 并核对版本。
+需要 Windows x64 和带 npm 的 Node.js 24 或更高版本。可以通过 npm 安装当前版本，也可以下载上面的 GitHub 安装包。在 PowerShell 中运行以下命令安装并核对版本。
 
 ```powershell
-npm install --global https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz
+npm install --global aqr-mcp@latest
 aqr-mcp --version
 ```
 
@@ -133,10 +133,10 @@ Select **Feedback** in the upper-right corner to open the form in your browser. 
 
 The official MCP Registry lists `io.github.joinwell52-AI/aqr` and links it to the local stdio service on npm. [Registry entry](https://registry.modelcontextprotocol.io/?q=io.github.joinwell52-AI%2Faqr)
 
-MCP requires Windows x64 and Node.js 24 or later with npm. Install version 0.2.6 from GitHub.
+MCP requires Windows x64 and Node.js 24 or later with npm. Install the current version from npm or use the GitHub package linked above.
 
 ```powershell
-npm install --global https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz
+npm install --global aqr-mcp@latest
 aqr-mcp --version
 ```
 
