@@ -7,7 +7,7 @@
 [![官方 MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-086d69?labelColor=18353a)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/latest)
 
 [![npm 最近 30 天下载量](https://img.shields.io/npm/dm/aqr-mcp?label=npm%20downloads&labelColor=18353a&color=086d69)](https://www.npmjs.com/package/aqr-mcp)
-[![当前 Windows EXE 下载量](https://img.shields.io/github/downloads/joinwell52-AI/AQR-D/v0.2.5-setup.1/AQR-Setup-x64.exe?label=Windows%20EXE%20downloads&labelColor=18353a&color=086d69)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.1)
+[![Windows EXE 累计下载量](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoinwell52-AI%2FAQR-D%2Fmain%2Fassets%2Fwindows-exe-downloads.json)](https://github.com/joinwell52-AI/AQR-D/releases)
 
 [中文](#中文) · [English](#english) · [中文配音演示](https://joinwell52-ai.github.io/AQR-D/) · [English demo](https://joinwell52-ai.github.io/AQR-D/en/) · [使用反馈 / Feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
 

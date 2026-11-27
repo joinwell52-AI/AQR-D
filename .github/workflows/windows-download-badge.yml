@@ -1,0 +1,47 @@
+name: Update Windows EXE download badge
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: windows-exe-download-badge
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Count downloads of Windows installers
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          path=assets/windows-exe-downloads.json
+          api="repos/$GITHUB_REPOSITORY/contents/$path"
+          branch=$(gh api "repos/$GITHUB_REPOSITORY" --jq '.default_branch')
+
+          total=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq '.[] | select(.draft | not) | .assets[] | select(.name | test("^AQR-Setup(-.+)?\\.exe$"; "i")) | .download_count' |
+            jq -s 'add // 0')
+
+          file=$(gh api --method GET "$api" -f ref="$branch")
+          badge=$(jq -r '.content' <<< "$file" | base64 --decode)
+          echo "Windows installer downloads across public releases: $total"
+          if [[ $(jq -r '.message' <<< "$badge") == "$total" ]]; then
+            exit 0
+          fi
+
+          content=$(jq --arg total "$total" '.message = $total' <<< "$badge" | base64 -w0)
+          gh api --method PUT "$api" \
+            -f branch="$branch" \
+            -f message="Update Windows EXE download count" \
+            -f sha="$(jq -r '.sha' <<< "$file")" \
+            -f content="$content" --silent
