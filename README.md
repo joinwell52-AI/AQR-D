@@ -2,7 +2,7 @@
 
 在电脑上操作手机 App，登录电脑客户端或网页时，由手机 App 自动扫码。
 
-[![Windows x64 下载](https://img.shields.io/badge/Windows-x64-086d69?labelColor=18353a)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.3)
+[![Windows x64 下载](https://img.shields.io/badge/Windows-x64-086d69?labelColor=18353a)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.6)
 [![npm 版本](https://img.shields.io/npm/v/aqr-mcp?label=npm&logo=npm&logoColor=white&labelColor=18353a&color=086d69)](https://www.npmjs.com/package/aqr-mcp)
 [![官方 MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-086d69?labelColor=18353a)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/latest)
 
@@ -21,10 +21,10 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 | 版本 | 下载 | 怎么用 |
 | --- | --- | --- |
-| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.3/AQR-Setup-x64.exe) | 可选简体中文或 English、自定义安装目录，并选择创建桌面和开始菜单快捷方式。安装包已包含 Node.js。 |
-| 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
+| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/AQR-Setup-x64.exe) | 可选简体中文或 English、自定义安装目录，并选择创建桌面和开始菜单快捷方式。安装包已包含 Node.js。 |
+| 本机 MCP 版 | [GitHub 安装包 0.2.6](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz) · [npm](https://www.npmjs.com/package/aqr-mcp) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
 
-当前为 **Windows x64 0.2.5 预览版**。默认安装到 `%LOCALAPPDATA%\Programs\AQR\0.2.5`。安装目录的 `README.md` 是双语桌面使用指南。要卸载，请在 Windows「设置 → 应用」或「控制面板 → 程序和功能」中找到「自动扫码助手 (AQR)」，打开双语卸载窗口。已安装早期 0.2.5 的用户可在原目录运行新版安装器，更新卸载入口。EXE 未签名，可在 [安装器发布页](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.3) 核对 SHA-256。
+当前为 **Windows x64 0.2.6 预览版**。默认安装到 `%LOCALAPPDATA%\Programs\AQR\0.2.6`。安装目录的 `README.md` 是双语桌面使用指南。要卸载，请在 Windows「设置 → 应用」或「控制面板 → 程序和功能」中找到「自动扫码助手 (AQR)」。可在发布页核对未签名安装包的 SHA-256。[安装器发布页](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.6)
 
 ### Windows 桌面版怎么操作
 
@@ -39,6 +39,7 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 图中使用演示设备和应用列表。
 
 - **右上角「刷新设备」** 重新查找当前 USB 手机。换手机后也用这个按钮。界面语言可切换中文和 English。
+- **右上角「使用反馈」** 在浏览器打开表单，写完点击「提交」，无需登录 GitHub。[使用反馈](https://joinwell52-ai.github.io/AQR-D/#feedback)
 - **左侧「手机应用」** 可按名称或包名搜索。以微信为例，搜索「微信」，点旁边的「打开」，即可在独立窗口用电脑鼠标和键盘操作。已打开的窗口在右侧列出，可从那里关闭。
 - **右侧「电脑模式」** 用于把电脑二维码送到目标 App 的「扫一扫」。右侧同时提供手机连接说明。
 
@@ -58,14 +59,14 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 官方 MCP Registry 已登记 `io.github.joinwell52-AI/aqr`。该条目指向 npm 上的本机 stdio 服务。 [查看官方登记](https://registry.modelcontextprotocol.io/?q=io.github.joinwell52-AI%2Faqr)
 
-需要 Windows x64 和带 npm 的 Node.js 24 或更高版本。在 PowerShell 中安装并核对版本：
+需要 Windows x64 和带 npm 的 Node.js 24 或更高版本。在 PowerShell 中安装 GitHub 上的 0.2.6 并核对版本。
 
 ```powershell
-npm install --global aqr-mcp
+npm install --global https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz
 aqr-mcp --version
 ```
 
-也可以下载 GitHub 上的 `.tgz`，在下载目录运行 `npm install --global ./aqr-mcp-0.2.5.tgz`。
+想报告问题或提建议时，在聊天中说「AQR 怎么提交反馈？」或调用 `android_qr_probe({"help":"feedback"})` 获取表单链接。[使用反馈](https://joinwell52-ai.github.io/AQR-D/#feedback)
 
 将以下配置加入支持本机 stdio 的 MCP 客户端。以 Codex 的 TOML 配置为例，先运行 `npm root --global`，再把输出目录填进 `args` 中的路径。
 
@@ -111,10 +112,10 @@ The current version of AQR is free to download and use, including the Windows in
 
 | Edition | Download | How to use it |
 | --- | --- | --- |
-| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.3/AQR-Setup-x64.exe) | Choose Simplified Chinese or English, set the installation folder, and select desktop and Start menu shortcuts. Node.js is included. |
-| Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
+| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/AQR-Setup-x64.exe) | Choose Simplified Chinese or English, set the installation folder, and select desktop and Start menu shortcuts. Node.js is included. |
+| Local MCP | [GitHub package 0.2.6](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz) · [npm](https://www.npmjs.com/package/aqr-mcp) | Connect a client that supports local stdio MCP and control AQR from chat. |
 
-The current **Windows x64 preview is 0.2.5**. The default installation folder is `%LOCALAPPDATA%\Programs\AQR\0.2.5`. It includes a bilingual desktop guide in `README.md`. To open the bilingual uninstall window, find **Auto QR Assistant (AQR)** in Windows Settings under **Apps** or in Control Panel under **Programs and Features**. If you already installed an earlier 0.2.5 build, run the new installer in the same folder to update the uninstall entry. The installer is unsigned and its SHA-256 checksum is available on the [installer release page](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.3).
+The current **Windows x64 preview is 0.2.6**. The default installation folder is `%LOCALAPPDATA%\Programs\AQR\0.2.6`. It includes a bilingual desktop guide in `README.md`. To uninstall, find **Auto QR Assistant (AQR)** in Windows Settings under **Apps** or in Control Panel under **Programs and Features**. The release page lists the unsigned installer’s SHA-256 checksum. [Installer release page](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.6)
 
 ### Using the Windows desktop app
 
@@ -126,18 +127,22 @@ Connect the phone with a USB data cable and select **File transfer** in the phon
 2. **PC Mode.** Display the sign-in QR code in WeChat for Windows. Choose **Switch account** if only the previous account’s sign-in button is visible. In AQR, open **Computer mode**, select WeChat as the phone app, capture the Windows WeChat window, and crop to the QR code with its white margin. You can also capture with `Win+Shift+S` and paste with `Ctrl+V`, or select a local image. These options work without OBS.
 3. **Scan.** Click **Open app** and select **+ → Scan** in the phone’s WeChat window. Review and confirm any sign-in prompt. Once the chat list appears in WeChat for Windows, select **Close PC Mode**.
 
+Select **Feedback** in the upper-right corner to open the form in your browser. Write your feedback and select **Submit**. [Send feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
+
 ### Local MCP setup
 
 The official MCP Registry lists `io.github.joinwell52-AI/aqr` and links it to the local stdio service on npm. [Registry entry](https://registry.modelcontextprotocol.io/?q=io.github.joinwell52-AI%2Faqr)
 
-MCP requires Windows x64 and Node.js 24 or later with npm. Install it from npm:
+MCP requires Windows x64 and Node.js 24 or later with npm. Install version 0.2.6 from GitHub.
 
 ```powershell
-npm install --global aqr-mcp
+npm install --global https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.6/aqr-mcp-0.2.6.tgz
 aqr-mcp --version
 ```
 
-For the GitHub download, run `npm install --global ./aqr-mcp-0.2.5.tgz` in the download folder. For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
+For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
+
+To report a problem or suggest an improvement, ask “How do I send feedback about AQR?” or call `android_qr_probe({"help":"feedback","language":"en"})`. [Send feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
 
 #### MCP tools
 
