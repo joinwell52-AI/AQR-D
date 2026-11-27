@@ -2,7 +2,7 @@
 
 在电脑上操作手机 App，登录电脑客户端或网页时，由手机 App 自动扫码。
 
-[![Windows x64 下载](https://img.shields.io/badge/Windows-x64-086d69?labelColor=18353a)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.1)
+[![Windows x64 下载](https://img.shields.io/badge/Windows-x64-086d69?labelColor=18353a)](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.2)
 [![npm 版本](https://img.shields.io/npm/v/aqr-mcp?label=npm&logo=npm&logoColor=white&labelColor=18353a&color=086d69)](https://www.npmjs.com/package/aqr-mcp)
 [![官方 MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-086d69?labelColor=18353a)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.joinwell52-AI%2Faqr/versions/latest)
 
@@ -21,10 +21,10 @@ AQR 当前版本的 Windows 安装版（EXE）和本机 MCP 版均可免费下�
 
 | 版本 | 下载 | 怎么用 |
 | --- | --- | --- |
-| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.1/AQR-Setup-x64.exe) | 可选简体中文或 English、自定义安装目录，并选择创建桌面和开始菜单快捷方式。安装包已包含 Node.js。 |
+| Windows 安装版 | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.2/AQR-Setup-x64.exe) | 可选简体中文或 English、自定义安装目录，并选择创建桌面和开始菜单快捷方式。安装包已包含 Node.js。 |
 | 本机 MCP 版 | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub 安装包](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | 安装后接到支持本机 stdio MCP 的客户端，在聊天里操作。 |
 
-当前为 **Windows x64 0.2.5 预览版**。默认安装到 `%LOCALAPPDATA%\Programs\AQR\0.2.5`。EXE 未签名，可在 [安装器发布页](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.1) 核对 SHA-256。
+当前为 **Windows x64 0.2.5 预览版**。默认安装到 `%LOCALAPPDATA%\Programs\AQR\0.2.5`。安装目录的 `README.md` 是双语桌面使用指南。要卸载，请在 Windows「设置 → 应用」或「控制面板 → 程序和功能」中查找「自动扫码助手 (AQR)」。已安装早期 0.2.5 的用户可在原目录运行新版安装器，补上指南和卸载项。EXE 未签名，可在 [安装器发布页](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.2) 核对 SHA-256。
 
 ### Windows 桌面版怎么操作
 
@@ -111,10 +111,10 @@ The current version of AQR is free to download and use, including the Windows in
 
 | Edition | Download | How to use it |
 | --- | --- | --- |
-| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.1/AQR-Setup-x64.exe) | Choose Simplified Chinese or English, set the installation folder, and select desktop and Start menu shortcuts. Node.js is included. |
+| Windows installer | [AQR-Setup-x64.exe](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5-setup.2/AQR-Setup-x64.exe) | Choose Simplified Chinese or English, set the installation folder, and select desktop and Start menu shortcuts. Node.js is included. |
 | Local MCP | [npm](https://www.npmjs.com/package/aqr-mcp) · [GitHub package](https://github.com/joinwell52-AI/AQR-D/releases/download/v0.2.5/aqr-mcp-0.2.5.tgz) | Connect a client that supports local stdio MCP and control AQR from chat. |
 
-The current **Windows x64 preview is 0.2.5**. The default installation folder is `%LOCALAPPDATA%\Programs\AQR\0.2.5`. The installer is unsigned and its SHA-256 checksum is available on the [installer release page](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.1).
+The current **Windows x64 preview is 0.2.5**. The default installation folder is `%LOCALAPPDATA%\Programs\AQR\0.2.5`. It includes a bilingual desktop guide in `README.md`. To uninstall, find **Auto QR Assistant (AQR)** in Windows Settings under **Apps** or in Control Panel under **Programs and Features**. If you already installed an earlier 0.2.5 build, run the new installer in the same folder to add the guide and uninstall entry. The installer is unsigned and its SHA-256 checksum is available on the [installer release page](https://github.com/joinwell52-AI/AQR-D/releases/tag/v0.2.5-setup.2).
 
 ### Using the Windows desktop app
 
