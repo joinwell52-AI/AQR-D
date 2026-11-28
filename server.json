@@ -3,7 +3,7 @@
   "name": "io.github.joinwell52-AI/aqr",
   "title": "Auto QR Assistant (AQR)",
   "description": "Control Android apps and automate configured QR sign-ins over USB on Windows x64.",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "repository": {
     "url": "https://github.com/joinwell52-AI/AQR-D",
     "source": "github"
@@ -13,7 +13,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "aqr-mcp",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "transport": {
         "type": "stdio"
       }
