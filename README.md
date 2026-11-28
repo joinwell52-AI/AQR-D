@@ -76,6 +76,17 @@ command = "node"
 args = ["C:/path/to/node_modules/aqr-mcp/bin/launcher.mjs"]
 ```
 
+#### 从自建插件市场安装
+
+AQR 也可从本仓库的插件市场安装。仍需使用 Windows x64 和带 npm 的 Node.js 24 或更新版本。
+
+| 宿主 | 添加市场 | 安装 AQR |
+| --- | --- | --- |
+| Codex | `codex plugin marketplace add joinwell52-AI/AQR-D` | `codex plugin add aqr@aqr-tools` |
+| Claude Code | `claude plugin marketplace add joinwell52-AI/AQR-D` | `claude plugin install aqr@aqr-tools` |
+
+已在同一个宿主手动配置过 AQR 的用户，可选用一种安装方式，避免加载重复的工具。
+
 #### MCP 工具
 
 | MCP 工具 | 用途 |
@@ -143,6 +154,17 @@ aqr-mcp --version
 For a Codex TOML configuration example, see the Chinese setup above. The launcher is `aqr-mcp/bin/launcher.mjs` under the directory returned by `npm root --global`.
 
 To report a problem or suggest an improvement, ask “How do I send feedback about AQR?” or call `android_qr_probe({"help":"feedback","language":"en"})`. [Send feedback](https://joinwell52-ai.github.io/AQR-D/#feedback)
+
+#### Install from the AQR plugin marketplace
+
+You can also install AQR from this repository's plugin marketplace. It requires Windows x64 and Node.js 24 or later with npm.
+
+| Host | Add the marketplace | Install AQR |
+| --- | --- | --- |
+| Codex | `codex plugin marketplace add joinwell52-AI/AQR-D` | `codex plugin add aqr@aqr-tools` |
+| Claude Code | `claude plugin marketplace add joinwell52-AI/AQR-D` | `claude plugin install aqr@aqr-tools` |
+
+Use one installation method per host to avoid loading duplicate AQR tools.
 
 #### MCP tools
 

@@ -1,0 +1,12 @@
+{
+  "name": "aqr-tools",
+  "interface": { "displayName": "Auto QR Assistant" },
+  "plugins": [
+    {
+      "name": "aqr",
+      "source": { "source": "local", "path": "./plugins/aqr" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

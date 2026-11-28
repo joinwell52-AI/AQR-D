@@ -1,0 +1,12 @@
+{
+  "name": "aqr-tools",
+  "owner": { "name": "joinwell52-AI" },
+  "metadata": { "description": "Auto QR Assistant plugins for Windows x64." },
+  "plugins": [
+    {
+      "name": "aqr",
+      "source": "./plugins/aqr",
+      "description": "Control Android apps over USB and automate configured QR sign-ins on Windows."
+    }
+  ]
+}

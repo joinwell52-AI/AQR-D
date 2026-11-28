@@ -1,0 +1,8 @@
+{
+  "name": "aqr",
+  "version": "0.2.6",
+  "description": "Control Android apps over USB and automate configured QR sign-ins on Windows x64. Requires Node.js 24 or newer with npm.",
+  "author": { "name": "joinwell52-AI" },
+  "homepage": "https://github.com/joinwell52-AI/AQR-D",
+  "mcpServers": "./.mcp.json"
+}

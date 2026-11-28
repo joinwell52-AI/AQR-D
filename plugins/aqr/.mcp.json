@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "aqr": {
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": ["/d", "/s", "/c", "npx.cmd --yes aqr-mcp@0.2.6"]
+    }
+  }
+}

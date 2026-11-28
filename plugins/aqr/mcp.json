@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "aqr": {
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": ["/d", "/s", "/c", "npx.cmd --yes aqr-mcp@0.2.6"]
+    }
+  }
+}
