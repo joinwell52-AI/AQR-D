@@ -80,12 +80,16 @@ args = ["C:/path/to/node_modules/aqr-mcp/bin/launcher.mjs"]
 
 AQR 也可从本仓库的插件市场安装。仍需使用 Windows x64 和带 npm 的 Node.js 24 或更新版本。
 
+首次使用时，在 PowerShell 运行 `npx.cmd --yes aqr-mcp@0.2.6 --desktop --no-window`，等终端显示本机地址后按 `Ctrl+C`。这一步会下载 npm 包和 USB 工具，避免宿主在首次启动时等待超时。
+
 | 宿主 | 添加市场 | 安装 AQR |
 | --- | --- | --- |
 | Codex | `codex plugin marketplace add joinwell52-AI/AQR-D` | `codex plugin add aqr@aqr-tools` |
 | Claude Code | `claude plugin marketplace add joinwell52-AI/AQR-D` | `claude plugin install aqr@aqr-tools` |
 
 已在同一个宿主手动配置过 AQR 的用户，可选用一种安装方式，避免加载重复的工具。
+
+[mcp.tc 上的 AQR 条目](https://mcp.tc/i/auto-qr-assistant-aqr)
 
 #### MCP 工具
 
@@ -159,12 +163,16 @@ To report a problem or suggest an improvement, ask “How do I send feedback abo
 
 You can also install AQR from this repository's plugin marketplace. It requires Windows x64 and Node.js 24 or later with npm.
 
+For the first run, enter `npx.cmd --yes aqr-mcp@0.2.6 --desktop --no-window` in PowerShell and press `Ctrl+C` once a local address appears. This downloads the npm package and USB tools before your host starts the MCP server, avoiding a startup timeout.
+
 | Host | Add the marketplace | Install AQR |
 | --- | --- | --- |
 | Codex | `codex plugin marketplace add joinwell52-AI/AQR-D` | `codex plugin add aqr@aqr-tools` |
 | Claude Code | `claude plugin marketplace add joinwell52-AI/AQR-D` | `claude plugin install aqr@aqr-tools` |
 
 Use one installation method per host to avoid loading duplicate AQR tools.
+
+[AQR listing on mcp.tc](https://mcp.tc/i/auto-qr-assistant-aqr)
 
 #### MCP tools
 
