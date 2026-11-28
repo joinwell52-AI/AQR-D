@@ -80,7 +80,7 @@ args = ["C:/path/to/node_modules/aqr-mcp/bin/launcher.mjs"]
 
 AQR 也可从本仓库的插件市场安装。仍需使用 Windows x64 和带 npm 的 Node.js 24 或更新版本。
 
-首次使用时，在 PowerShell 运行 `npx.cmd --yes aqr-mcp@0.2.6 --desktop --no-window`，等终端显示本机地址后按 `Ctrl+C`。这一步会下载 npm 包和 USB 工具，避免宿主在首次启动时等待超时。
+首次使用时，先在 PowerShell 运行 `npx.cmd --yes aqr-mcp@0.2.6 --version`，等终端显示 `0.2.6` 后再启动宿主。首次启动 MCP 时还需下载 USB 工具。若宿主连接超时，可先打开已安装的 AQR Windows 桌面版完成初始化，再重启宿主。
 
 | 宿主 | 添加市场 | 安装 AQR |
 | --- | --- | --- |
@@ -163,7 +163,7 @@ To report a problem or suggest an improvement, ask “How do I send feedback abo
 
 You can also install AQR from this repository's plugin marketplace. It requires Windows x64 and Node.js 24 or later with npm.
 
-For the first run, enter `npx.cmd --yes aqr-mcp@0.2.6 --desktop --no-window` in PowerShell and press `Ctrl+C` once a local address appears. This downloads the npm package and USB tools before your host starts the MCP server, avoiding a startup timeout.
+Before the first run, run `npx.cmd --yes aqr-mcp@0.2.6 --version` in PowerShell and wait for `0.2.6` before starting the host. The MCP server also downloads the USB tools on its first launch. If the host times out, open the installed AQR Windows desktop app once to complete setup, then restart the host.
 
 | Host | Add the marketplace | Install AQR |
 | --- | --- | --- |
